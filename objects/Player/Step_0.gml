@@ -43,27 +43,20 @@
 	if keyboard_check_pressed(vk_f2) wep = 2;
 	
 	//shooting!! aw yeah
-	if ((clip > 0 && clipload == 0) || weapon_get_clip(wep) == 0)
-	{
-		if weapon_get_auto(wep) == 0
-		{
+	if ((clip > 0 && clipload == 0) || weapon_get_clip(wep) == 0){
+		if weapon_get_auto(wep) == 0{
 			// NOOOOOO YOU CAN'T JUST HOLD DOWN THE FIRE KEY TO SHOOT
-			if button_pressed(index,KEY_FIRE) && range(reload, 0, 9)
-			{
+			if button_pressed(index,KEY_FIRE) && range(reload, 0, 9){
 				fireme = true;	
 			}
-		}
-		else
-		{
+		}else{
 			// Haha automatic go brrrrrrr
-			if button_check(index,KEY_FIRE) && reload == 0
-			{
+			if button_check(index,KEY_FIRE) && reload == 0{
 				fireme = true;
 			}
 		}
 		// Shot has been queued, shoot when possible
-		if(fireme) && reload == 0
-		{
+		if(fireme) && reload == 0{
 			reload = weapon_get_load(wep);
 			wkick = weapon_get_kick(wep);
 			fired = wkick + 20;
@@ -77,13 +70,9 @@
 			*/
 			fireme = 0;
 		}
-	}
-	else
-	{
-		if button_pressed(index,KEY_RELOAD) || (button_pressed(index,KEY_FIRE) && clip <= 0)
-		{
-			if (clipload == 0)
-			{
+	}else{
+		if button_pressed(index,KEY_RELOAD) || (button_pressed(index,KEY_FIRE) && clip <= 0){
+			if (clipload == 0){
 				clipload = weapon_get_clod(wep);
 				snd_play(sndNoAmmo)
 			}
@@ -93,11 +82,9 @@
 	// Reload time reduction, Wkick reduction, Clip reloading
 	reload = max(0, reload - 1);
 	wkick -= 0.5*sign(wkick)
-	if(clipload > 0)
-	{
+	if(clipload > 0){
 		clipload -= 1;
-		if(clipload <= 0)
-		{
+		if(clipload <= 0){
 			clip = weapon_get_clip(wep);
 			wkick = -weapon_get_kick(wep);
 			if weapon_get_casesprite(wep) != 0
@@ -119,10 +106,8 @@
 	front = mouse_y > y ? 1 : -1;
 	
 	// Animation handling
-	if (sprite_index != spr_jumpsquat && sprite_index != spr_jump && z == 0)
-	{
-		if speed > friction
-		{
+	if (sprite_index != spr_jumpsquat && sprite_index != spr_jump && z == 0){
+		if speed > friction{
 			sprite_index = spr_walk;
 			var _usespeed = hspeed
 			if abs(vspeed) > abs(hspeed)
@@ -130,17 +115,12 @@
 				_usespeed = vspeed
 			}
 			image_speed = 1 * sign(_usespeed * sign(right));
-		}
-		else
-		{
+		}else{
 			sprite_index = spr_idle;
 			image_speed = 1;
 		}
-	}
-	else
-	{
-		if sprite_index != spr_jumpsquat
-		{
+	}else{
+		if sprite_index != spr_jumpsquat{
 			sprite_index = spr_idle;
 			image_speed = 1;
 		}
@@ -149,8 +129,7 @@
 	/// Put jumpan stuff here, AFTER the animation handlers
 	///  ~Sani
 	// Move at a fixed rate when jumpan
-	if sprite_index == spr_jump
-	{
+	if sprite_index == spr_jump{
 		x += lengthdir_x(goaldist/jumplength, goaldir);
 		y += lengthdir_y(goaldist/jumplength, goaldir);
 		// I'm doing this so that regular movement doesn't interfere with it as much
