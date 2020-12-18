@@ -1,0 +1,5 @@
+gpu_set_blendmode(bm_add)
+draw_set_color(image_blend)
+draw_circle(x,y,size,0)
+draw_set_color(c_white)
+gpu_set_blendmode(bm_normal)

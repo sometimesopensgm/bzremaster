@@ -1,0 +1,1 @@
+draw_line_width_color(x,y,x+lengthdir_x(length,direction+180),y+lengthdir_y(length,direction+180),width,trailcol,trailfadecol)
