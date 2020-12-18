@@ -1,0 +1,7 @@
+gpu_set_blendmode(bm_add)
+draw_set_color(make_color_rgb(158,173,211))
+draw_set_alpha(image_alpha)
+draw_circle_color(x,y,size,c_white,c_navy,0)
+gpu_set_blendmode(bm_normal)
+draw_set_color(c_white)
+draw_set_alpha(1)

@@ -1,0 +1,1 @@
+length = speed*lmult
