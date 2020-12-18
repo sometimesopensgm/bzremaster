@@ -65,3 +65,4 @@ if aggrotimer = 0
 
 collide(parSolid)
 collide(Wall)
+//uh oh stinkyyyyy
