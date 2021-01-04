@@ -16,11 +16,11 @@ if instance_exists(Player) and docamera = true
 	_viewdist = 3*/
 	//screenshake
 	if shake > 10
-	shake *= 0.8
+		shake *= 0.8
 	if shake > 0
-	shake -= 1
+		shake -= 1
 	else
-	shake = 0
+		shake = 0
 	
 	jerkx = lerp(jerkx,goalx,0.5)-shake/2+irandom(shake)
 	jerky = lerp(jerky,goaly,0.5)-shake/2+irandom(shake)

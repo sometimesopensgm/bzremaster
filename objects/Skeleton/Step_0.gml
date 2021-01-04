@@ -43,7 +43,7 @@ if reload = 0
 }
 //decrement reload
 if reload > 0
-reload -= 1
+	reload -= 1
 //aggro handling
 //make me wander if i dont have line of sight for long enough
 if collision_line(x,y,Player.x,Player.y,parOverSolid,true,false)
