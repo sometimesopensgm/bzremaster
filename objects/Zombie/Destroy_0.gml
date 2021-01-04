@@ -8,4 +8,4 @@ repeat(8)
 		image_yscale = image_xscale
 	}
 }
-snd_play_pitch(sndEnemyDie,random_range(0.8,1.2))
+snd_play_pitch_at(sndEnemyDie,random_range(0.8,1.2), x, y, 64, 384, 1)

@@ -5,7 +5,7 @@ function scrEnemyHitEvent(){
 	{
 		case "Skeleton":
 			if irandom(1) = 0
-			snd_play_pitch(sndSkeletonHit,random_range(0.8,1.2))
+			snd_play_pitch_at(sndSkeletonHit,random_range(0.8,1.2), x, y, 64, 256, 1)
 		break;
 	}
 }

@@ -9,3 +9,5 @@ goaly = 0
 jerkx = 0
 jerky = 0
 docamera = true
+//Stop listening to shit backwards headass
+audio_listener_orientation(0, 0, 1, 0, -1, 0)

@@ -16,7 +16,7 @@ if gun = 0
 		effect_create(sprEnemyMuzzleFlare,_tipx,_tipy,image_angle,-1,-1,image_blend)
 	}
 	wkick = 3
-	snd_play_pitch(sndEnemyFire,random_range(0.8,1.2))
+	snd_play_pitch_at(sndEnemyFire,random_range(0.8,1.2), x, y, 128, 256, 1.2)
 }
 if gun = 1
 {
@@ -37,6 +37,6 @@ if gun = 1
 			effect_create(sprEnemyMuzzleFlare,_tipx,_tipy,image_angle,-1,-1,image_blend)
 		}
 	}
-	snd_play_pitch(sndShotgun,random_range(1,1.4))
+	snd_play_pitch_at(sndShotgun,random_range(1,1.4), x, y, 96, 256, 1)
 	wkick = 6
 }

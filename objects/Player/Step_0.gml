@@ -62,7 +62,8 @@
 			}
 		}
 		// Shot has been queued, shoot when possible
-		if(fireme) && reload == 0{
+		if(fireme) && reload == 0
+		{
 			reload = weapon_get_load(wep);
 			wkick = weapon_get_kick(wep);
 			fired = wkick + 20;
@@ -76,7 +77,9 @@
 			*/
 			fireme = 0;
 		}
-	}else{
+	}
+	else
+	{
 		if button_pressed(index,KEY_RELOAD) || (button_pressed(index,KEY_FIRE) && clip <= 0)
 		{
 			if (clipload == 0){
