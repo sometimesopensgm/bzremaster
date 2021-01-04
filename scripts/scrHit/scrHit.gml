@@ -25,7 +25,7 @@ if team != _hitting.team
 		}
 		if _hitting.team = 1
 		scrEnemyHitEvent()
-		snd_play_pitch(_hitsound,1+random_range(-.2,.2))
+		snd_play_pitch_at(_hitsound,1+random_range(-.2,.2),_x,_y,64,256,1)
 		if _hitspark = HIT_SLASH
 		{
 			effect_create(sprCut,_x,_y,random_range(-20,20),-1,-1,c_white)
