@@ -16,7 +16,7 @@
 	front = 1
 	
 	// Weapons
-	wep = 2; // Numerical weapon index
+	wep = 3; // Numerical weapon index
 	wkick = 0; // Weapon recoil. Visual.
 	reload = 0; // Cooldown time
 	fireme = false; // Queues a shot. Same as NT's "clicked" variable

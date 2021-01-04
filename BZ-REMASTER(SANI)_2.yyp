@@ -55,6 +55,7 @@
     {"id":{"name":"instance_create","path":"scripts/instance_create/instance_create.yy",},"order":0,},
     {"id":{"name":"sprFire","path":"sprites/sprFire/sprFire.yy",},"order":1,},
     {"id":{"name":"instance_create_grid","path":"scripts/instance_create_grid/instance_create_grid.yy",},"order":1,},
+    {"id":{"name":"sndPierce","path":"sounds/sndPierce/sndPierce.yy",},"order":16,},
     {"id":{"name":"sndShotgun","path":"sounds/sndShotgun/sndShotgun.yy",},"order":10,},
     {"id":{"name":"ParryEffect","path":"objects/ParryEffect/ParryEffect.yy",},"order":8,},
     {"id":{"name":"Casing","path":"objects/Casing/Casing.yy",},"order":6,},
