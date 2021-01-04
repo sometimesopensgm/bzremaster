@@ -5,7 +5,7 @@ if walk > 0
 	motion_add(walkdir,acceleration)	
 }
 if speed > maxspeed+knockback
-speed = maxspeed+knockback
+	speed = maxspeed+knockback
 //handle sprites n shit
 if speed != 0
 {
@@ -37,7 +37,7 @@ if reload = 0
 			offset = 16
 			offdir = image_angle
 		}
-		snd_play_pitch(sndSwing,random_range(0.8,1.2))
+		snd_play_pitch_at(sndSwing,random_range(0.8,1.2), x, y, 64, 128, 1)
 		reload = 60
 	}
 }

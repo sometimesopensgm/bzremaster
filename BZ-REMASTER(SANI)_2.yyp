@@ -97,6 +97,7 @@
     {"id":{"name":"parHitme","path":"objects/parHitme/parHitme.yy",},"order":2,},
     {"id":{"name":"scrDrawBloom","path":"scripts/scrDrawBloom/scrDrawBloom.yy",},"order":8,},
     {"id":{"name":"fill_floor","path":"scripts/fill_floor/fill_floor.yy",},"order":9,},
+    {"id":{"name":"snd_play_pitch_at","path":"scripts/snd_play_pitch_at/snd_play_pitch_at.yy",},"order":20,},
     {"id":{"name":"make_floor","path":"scripts/make_floor/make_floor.yy",},"order":10,},
     {"id":{"name":"sprCauldron","path":"sprites/sprCauldron/sprCauldron.yy",},"order":12,},
     {"id":{"name":"make_solid","path":"scripts/make_solid/make_solid.yy",},"order":11,},

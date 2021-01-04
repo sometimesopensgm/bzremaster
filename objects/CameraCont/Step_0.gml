@@ -29,5 +29,7 @@ if instance_exists(Player) and docamera = true
 	camy = jerky
 
 	camera_set_view_pos(view_camera[0],camx,camy)
+	//Set listen position
+	audio_listener_position(camx + _xoffset, camy + _yoffset, 0);
 }
 

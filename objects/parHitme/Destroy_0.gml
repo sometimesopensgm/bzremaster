@@ -1,2 +1,2 @@
 if freezetime > 0
-sleep(freezetime)
+	sleep(freezetime)
