@@ -9,6 +9,7 @@ function make_solid(argument0, argument1, argument2) {
 	solids[2] = Wall
 	solids[3] = Grave
 	solids[4] = Altar
+	solids[5] = BoneZone
 	
 	makeme = true;
 

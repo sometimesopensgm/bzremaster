@@ -14,6 +14,7 @@
 	spr_jumpsquat = sprMcbonesJumpSquat
 	right = 1
 	front = 1
+	nervous = 0
 	
 	// Weapons
 	wep = 3; // Numerical weapon index

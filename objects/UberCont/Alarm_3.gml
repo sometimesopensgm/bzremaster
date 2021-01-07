@@ -5,7 +5,7 @@ do
 	var _valid = 1
 	var _sx = irandom(2)
 	var _sy = irandom(2)
-	if _sx = 1 and _sy = 1
+	if _sx = 1 and _sy = 0
 	{
 		_valid = 0
 	}
@@ -23,7 +23,7 @@ repeat(2)
 		var _valid = 1
 		var _sx = irandom(2)
 		var _sy = irandom(2)
-		if _sx = 1 and _sy = 1 or ds_grid_get(sectors,_sx,_sy) != 0
+		if _sx = 1 and _sy = 0 or ds_grid_get(sectors,_sx,_sy) != 0
 		{
 			_valid = 0
 		}

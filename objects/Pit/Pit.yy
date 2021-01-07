@@ -10,10 +10,7 @@
     "path": "sprites/sprBorder1Bot/sprBorder1Bot.yy",
   },
   "persistent": false,
-  "parentObjectId": {
-    "name": "parSolid",
-    "path": "objects/parSolid/parSolid.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

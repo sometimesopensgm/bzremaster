@@ -46,3 +46,16 @@ with Wall
 with Floor
 if place_meeting(x,y,parSolid) or place_meeting(x,y,Wall)
 instance_destroy()
+
+make_solid(320,0,solid_bonezone)
+//make sure nothing touches the bone zone
+with parSolid
+{
+	if place_meeting(x,y,BoneZone)
+	instance_destroy()
+}
+with Wall
+{
+	if place_meeting(x,y,BoneZone)
+	instance_destroy()
+}

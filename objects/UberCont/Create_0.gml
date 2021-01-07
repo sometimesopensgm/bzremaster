@@ -14,6 +14,7 @@ global.playing_music_index = -1
 global.playing_ambience_index = -1
 mus_play(mus1)
 amb_play(amb1)
+dospawns = 0
 //set the floor
 /*var lay_id = layer_get_id("Tiles_1");
 var map_id = layer_tilemap_get_id(lay_id);

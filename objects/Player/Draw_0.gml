@@ -10,7 +10,10 @@ if front = -1
 {
 	draw_sprite_ext(weapon_get_sprite(wep),0,xx+lengthdir_x(_gundist-wkick,handrot+wkick*4*right),yy+lengthdir_y(_gundist-wkick,handrot+wkick*4*right)+z,1,right,handrot+wkick*4*right+_gunoffrot,c_white,1)
 }
-draw_sprite_ext(sprite_index,image_index,xx,yy+z,right,image_yscale,image_angle,c_white,1)
+var _nervang = 0
+if sprite_index = spr_walk
+_nervang = (sin(nervous/4)*10)-((10*sign(nervous))*right)*sign(hspeed)
+draw_sprite_ext(sprite_index,image_index,xx,yy+z,right,image_yscale,image_angle+_nervang,c_white,1)
 if front = 1 or parrying > 0
 {
 	var _addrot = wkick*4*right

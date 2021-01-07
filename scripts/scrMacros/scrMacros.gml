@@ -5,6 +5,7 @@ function scrMacros() {
 #macro solid_wall 2
 #macro solid_grave 3
 #macro solid_altar 4
+#macro solid_bonezone 5
 #macro altar_item 0
 #macro altar_weapon 1
 #macro altar_portal 2

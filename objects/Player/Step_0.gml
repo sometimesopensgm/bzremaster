@@ -18,7 +18,31 @@
 		vspeed += acceleration * sign(vp);
 		hspeed += acceleration * sign(hp);
 	}
-	speed = median(-maxspeed,speed,maxspeed);
+	var _maxs = maxspeed
+	//slow down and sweat if you're about to fall
+	if place_meeting(x,y,Pit)
+	{
+		_maxs = maxspeed-0.5
+		var _headdir = (image_angle+sin(nervous/4)*10)-((10*sign(nervous))*right)*sign(hspeed)+90
+		var _sweatchance = 3
+		if sprite_index = spr_walk
+		_sweatchance = 1
+		if irandom(_sweatchance) = 1
+		with instance_create(x+lengthdir_x(12,_headdir),y+lengthdir_y(12,_headdir),Spark)
+		{
+			color = c_gray
+			fadecolor = c_dkgray
+			vspeed /= 2
+			speed -= _sweatchance
+			additive = 1
+		}
+		nervous += 1
+	}
+	else
+	{
+		nervous = 0	
+	}
+	speed = median(-_maxs,speed,_maxs);
 	//parrying
 	if button_pressed(index,KEY_JUMP) and parrying = 0
 	{
@@ -166,6 +190,7 @@
 	/// I trust your code here. Also I do not like writing collision code.
 	///   ~Sani
 	collide(parSolid)
+	collide_inverse()
 	//dont let yourself go back on land if you fell off the map
 	if z > 0
 	{
